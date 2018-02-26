@@ -17,20 +17,19 @@ exports.config = {
   exclude: [],
 
   multiCapabilities: [{
-/*
       'browserName': 'phantomjs',
       'phantomjs.binary.path': phantomjs.path,
       'phantomjs.cli.args': ['--remote-debugger-port=8081'],
       'phantomjs.ghostdriver.cli.args': ['--loglevel=DEBUG'],
-    }, {
-*/
+/*    }, {
+
       'browserName': 'chrome',
       'version': '',
       'platform': 'ANY',
       'chromeOptions': {
           args: ["--headless", "--disable-gpu", "--no-sandbox"]
       }
-/*    }, {
+    }, {
       'browserName': 'firefox',
       'version': '',
       'platform': 'ANY'
