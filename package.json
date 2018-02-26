@@ -15,7 +15,8 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-jasmine": "^0.3.8",
-    "protractor": "^4.0.9"
+    "protractor": "^4.0.9",
+    "jasmine-spec-reporter": "^4.2.1"
   },
   "scripts": {
     "postinstall": "bower install",
