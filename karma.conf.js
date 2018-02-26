@@ -22,15 +22,16 @@ module.exports = function(config) {
 
     browsers: ['PhantomJS'],
 
-    plugins: [
-      'karma-phantomjs-launcher',
-      'karma-jasmine'
-    ],
-
     reporters: ['dots', 'junit'],
     junitReporter: {
         outputFile: 'test-results.xml'
-    }
+    },
+
+    plugins: [
+      'karma-phantomjs-launcher',
+      'karma-jasmine',
+      'karma-junit-reporter'
+    ]
 
   });
 };
