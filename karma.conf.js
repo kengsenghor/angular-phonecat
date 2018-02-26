@@ -27,8 +27,8 @@ module.exports = function(config) {
       'karma-jasmine'
     ],
 
-    reporters = ['dots', 'junit'],
-    junitReporter = {
+    reporters: ['dots', 'junit'],
+    junitReporter: {
         outputFile: 'test-results.xml'
     }
 
