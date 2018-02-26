@@ -25,7 +25,12 @@ module.exports = function(config) {
     plugins: [
       'karma-phantomjs-launcher',
       'karma-jasmine'
-    ]
+    ],
+
+    reporters = ['dots', 'junit'],
+    junitReporter = {
+        outputFile: 'test-results.xml'
+    }
 
   });
 };
