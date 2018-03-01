@@ -20,7 +20,7 @@ module.exports = function(config) {
 
     frameworks: ['jasmine'],
 
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
 
     reporters: ['dots', 'junit'],
     junitReporter: {
@@ -28,7 +28,7 @@ module.exports = function(config) {
     },
 
     plugins: [
-      'karma-phantomjs-launcher',
+      'karma-chrome-launcher',
       'karma-jasmine',
       'karma-junit-reporter'
     ]
