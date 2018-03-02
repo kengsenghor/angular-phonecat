@@ -3,7 +3,7 @@ module.exports = function(config) {
   config.set({
 
     basePath: './app',
-
+    // comment
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-animate/angular-animate.js',
