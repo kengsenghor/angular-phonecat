@@ -5,9 +5,6 @@ const phantomjs = require('phantomjs-prebuilt');
 process.env.LANG = 'en'; // set your browser language
 require('jasmine-reporters');
 
-jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter(
-    'outputdir/', true, true));
-
 exports.config = {
 
   allScriptsTimeout: 11000,
@@ -59,6 +56,7 @@ exports.config = {
   
   onPrepare: function () {
     jasmine.getEnv().addReporter(new SpecReporter({spec: {displayStacktrace: true}}));
+    jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter('outputdir/', true, true));
   }
 };
 
