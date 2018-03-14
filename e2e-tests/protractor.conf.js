@@ -3,6 +3,10 @@
 const {SpecReporter} = require('jasmine-spec-reporter');
 const phantomjs = require('phantomjs-prebuilt');
 process.env.LANG = 'en'; // set your browser language
+require('jasmine-reporters');
+
+jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter(
+    'outputdir/', true, true));
 
 exports.config = {
 
@@ -27,7 +31,8 @@ exports.config = {
       'version': '',
       'platform': 'ANY',
       'chromeOptions': {
-          args: ["--headless", "--disable-gpu", "--no-sandbox"]
+          args: ["--headless", "--no-sandbox", "--start-maximized"]
+          //args: ["--headless", "--disable-gpu", "--no-sandbox"]
       }
 /*    }, {
       'browserName': 'firefox',
