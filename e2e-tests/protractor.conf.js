@@ -28,7 +28,7 @@ exports.config = {
       'version': '',
       'platform': 'ANY',
       'chromeOptions': {
-          args: ["--headless", "--no-sandbox", "--start-maximized"]
+          args: ["--no-sandbox", "--start-maximized"]
           //args: ["--headless", "--disable-gpu", "--no-sandbox"]
       }
 /*    }, {
@@ -56,7 +56,6 @@ exports.config = {
   
   onPrepare: function () {
     jasmine.getEnv().addReporter(new SpecReporter({spec: {displayStacktrace: true}}));
-    jasmine.getEnv().addReporter(new jasmine.JUnitXmlReporter('outputdir/', true, true));
   }
 };
 
