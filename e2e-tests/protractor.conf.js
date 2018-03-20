@@ -28,8 +28,8 @@ exports.config = {
       'version': '',
       'platform': 'ANY',
       'chromeOptions': {
-          args: ["--no-sandbox", "--start-maximized"]
-          //args: ["--headless", "--disable-gpu", "--no-sandbox"]
+          //args: ["--no-sandbox", "--start-maximized"]
+          args: ["--headless", "--disable-gpu", "--no-sandbox", "--start-maximized"]
       }
 /*    }, {
       'browserName': 'firefox',
