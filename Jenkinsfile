@@ -9,7 +9,7 @@ node {
         stage ('Build') {
             sh "echo 'shell scripts to build project...'"
             sh 'cp -rf $JENKINS_HOME/qa/angular-phonecat/build.sh $WORKSPACE'
-            sh('build.sh')
+            sh './build.sh'
         }
         stage ('Tests') {
             parallel 'static': {
