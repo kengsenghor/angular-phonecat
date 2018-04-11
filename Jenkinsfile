@@ -8,7 +8,7 @@ node {
         }
         stage ('Build') {
             sh "echo 'shell scripts to build project...'"
-            cp -rf $JENKINS_HOME/qa/angular-phonecat/build.sh ${WORKSPACE}/
+            cp -rf ${JENKINS_HOME}/qa/angular-phonecat/build.sh ${WORKSPACE}/
             ./build.sh
         }
         stage ('Tests') {
